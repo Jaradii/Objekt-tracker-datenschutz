@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Objekt Tracker – Datenschutz & Support</title>
+  <meta name="description" content="Datenschutzerklärung und Support für die App Objekt Tracker – Bauprojekte, Anfragen, Angebote und Fristen.">
+  <style>
+    :root { color-scheme: light dark; --accent: #176B5E; --deadline: #96540A; --bg: #F2F5F7; --bar: rgba(242, 245, 247, 0.85); --card: #FFFFFF; --border: #DCE5E8; --text: #1C333D; --muted: #5D6E75; }
+    @media (prefers-color-scheme: dark) {
+      :root { --accent: #8CDEC7; --deadline: #F5BF6B; --bg: #121A1F; --bar: rgba(18, 26, 31, 0.85); --card: #1B252A; --border: #2A3A41; --text: #EEF4F5; --muted: #A3B4BA; }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 72px; }
+    body { margin: 0; font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+    a { color: var(--accent); }
+
+    .bar { position: sticky; top: 0; z-index: 1; background: var(--bar); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+    .bar-inner { max-width: 850px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { font-weight: 700; font-size: 1.1rem; }
+    nav { display: flex; gap: 6px; }
+    nav a { padding: 6px 14px; border-radius: 999px; text-decoration: none; color: var(--muted); font-weight: 600; font-size: 0.95rem; }
+    nav a:hover { color: var(--text); }
+    body:has(#datenschutz:target) nav a[href="#datenschutz"],
+    body:has(#support:target) nav a[href="#support"] { background: var(--accent); color: var(--bg); }
+
+    main { max-width: 850px; margin: 0 auto; padding: 0 20px 80px; }
+    /* Mit #datenschutz oder #support in der Adresse ist nur dieser Teil zu sehen, ohne Anker beide. */
+    main:has(> section:target) > section:not(:target) { display: none; }
+    section { padding-top: 48px; }
+    section + section { border-top: 1px solid var(--border); margin-top: 64px; }
+    main:has(> section:target) > section { border-top: 0; margin-top: 0; }
+    h1 { font-size: clamp(2.2rem, 7vw, 4.2rem); line-height: 1.05; margin: 0 0 12px; }
+    h2 { margin-top: 2.2em; font-size: 1.4rem; }
+    /* Tracking-Bahn wie im App-Icon: Fortschritt in Mint, Fristpunkt in Bernstein. */
+    .track { position: relative; width: 120px; height: 7px; border-radius: 8px; background: var(--accent); margin: 24px 0 40px; }
+    .track::after { content: ""; position: absolute; right: -9px; top: 50%; width: 15px; height: 15px; border-radius: 50%; background: var(--deadline); transform: translateY(-50%); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 22px 24px; }
+    .muted { color: var(--muted); }
+  </style>
+</head>
+<body>
+<header class="bar">
+  <div class="bar-inner">
+    <span class="brand">Objekt Tracker</span>
+    <nav aria-label="Bereiche">
+      <a href="#datenschutz">Datenschutz</a>
+      <a href="#support">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="datenschutz">
+    <p class="muted">Objekt Tracker · Datenschutz</p>
+    <h1>Deine Projekte gehören dir.</h1>
+    <div class="track"></div>
+
+    <div class="card">
+      <strong>Verantwortlicher</strong><br>
+      Jaradii<br>
+      E-Mail: <a href="mailto:appfeedback.rented544@passmail.net">appfeedback.rented544@passmail.net</a>
+    </div>
+
+    <h2>1. Geltungsbereich</h2>
+    <p>Diese Datenschutzerklärung gilt für die App Objekt Tracker für iPhone, iPad und Mac und für diese Website. Mit Objekt Tracker verwaltest du Bauobjekte mit Kundenanfragen, Angeboten, Unterlagen, Gesprächsnotizen und Fristen. Du kannst die App allein auf einem Gerät nutzen, deine Daten über Apple iCloud zwischen deinen Geräten abgleichen und per Link mit einem Team zusammenarbeiten.</p>
+
+    <h2>2. Kurz gesagt</h2>
+    <p>Jaradii erhebt mit Objekt Tracker keine personenbezogenen Daten. Es gibt kein Benutzerkonto, keine eigenen Server, keine Werbung, keine Analyse-Werkzeuge und kein Tracking. Deine Daten liegen auf deinem Gerät und – wenn du iCloud nutzt – in deinem privaten iCloud-Bereich. Arbeitest du im Team, sehen sie außerdem die Personen, die über deinen Link beigetreten sind. Jaradii hat auf keine dieser Daten Zugriff.</p>
+
+    <h2>3. Daten auf deinem Gerät</h2>
+    <p>Objekte, Kunden mit ihren Ansprechpartnern, Anfragen, Angebote, Unterlagen, Gesprächsnotizen, Fristen und den Bearbeitungsverlauf speichert Objekt Tracker in einer Datenbank auf deinem Gerät. Die App funktioniert dadurch auch ohne Internetverbindung. Ebenfalls nur auf dem Gerät liegen deine Einstellungen: Darstellung, Erinnerungen, der Name für den Bearbeitungsverlauf und das Datum deiner letzten Sicherung.</p>
+    <p>Unterlagen wie Leistungsverzeichnisse, Pläne, Nachträge oder Angebotsdateien fügst du selbst über die Dateiauswahl deines Geräts hinzu. Objekt Tracker erhält nur die Dateien, die du dort ausdrücklich auswählst, und hat keinen Zugriff auf deine übrigen Dateien. Auf Kamera, Mikrofon, Fotomediathek, Kontakte, Kalender oder deinen Standort greift die App nicht zu.</p>
+
+    <h2>4. Kontaktdaten deiner Geschäftspartner</h2>
+    <p>Trägst du Kunden und Ansprechpartner mit Namen, Position, E-Mail-Adresse oder Telefonnummer ein, verarbeitest du personenbezogene Daten anderer Personen. Diese Daten bleiben auf deinen Geräten, in deinem iCloud-Bereich und – wenn du im Team arbeitest – bei deinem Team. Für ihren Umgang bist du selbst verantwortlich, etwa als Betrieb gegenüber deinen Kunden. Jaradii hat keinen Zugriff darauf und verarbeitet sie auch nicht in deinem Auftrag.</p>
+
+    <h2>5. Abgleich mit deinen Geräten über iCloud</h2>
+    <p>Bist du auf deinem Gerät bei iCloud angemeldet, gleicht Objekt Tracker deine Daten automatisch über Apples CloudKit in deiner privaten iCloud-Datenbank ab, damit sie auf all deinen Geräten mit demselben Apple Account erscheinen. Texte, Beträge und Termine stehen dort in verschlüsselten Feldern, Unterlagen als verschlüsselte iCloud-Dateien. Schaltest du in den Einstellungen deines Geräts den „Erweiterten Datenschutz“ für iCloud ein, ist alles Ende-zu-Ende verschlüsselt und nur noch von deinen Geräten lesbar.</p>
+    <p>Jaradii hat keinen Zugriff auf deine private iCloud-Datenbank. Für die Verarbeitung durch Apple gelten die Datenschutzrichtlinie und die iCloud-Bedingungen von Apple. Unter Daten &amp; Sicherung › iCloud kannst du „Mit deinen Geräten abgleichen“ für jedes Gerät einzeln ausschalten; die Daten bleiben dann auf diesem Gerät.</p>
+
+    <h2>6. Zusammenarbeit im Team</h2>
+    <p>Die Zusammenarbeit im Team ist freiwillig. Unter Daten &amp; Sicherung › Team erstellst du einen Team-Link und gibst ihn über eine App deiner Wahl weiter, etwa Nachrichten, AirDrop oder Mail. Für den Versand gelten die Bedingungen dieser App. <strong>Wer den Link hat, kann dem Team beitreten und alle Daten des Teams sehen und bearbeiten.</strong> Gib ihn deshalb nur an Personen, mit denen du zusammenarbeiten möchtest.</p>
+    <p>Im Team geteilt werden Objekte, Kunden mit ihren Ansprechpartnern, Anfragen, Angebote, Gesprächsnotizen, Unterlagen und der Bearbeitungsverlauf. Die Daten liegen verschlüsselt im iCloud-Bereich der Person, die den Link erstellt hat, und belegen dort Speicherplatz; die Mitglieder greifen über Apples CloudKit darauf zu. Wer beitritt, bringt seine eigenen Objekte mit ins Team. Objekte, die du unter Bearbeiten › Team aus dem Team nimmst, bleiben nur auf deinen eigenen Geräten.</p>
+    <p>Objekt Tracker zeigt keine iCloud-Namen, E-Mail-Adressen oder Telefonnummern der Mitglieder an, nur ihre Anzahl. Im Bearbeitungsverlauf steht der Name, den jede Person selbst einträgt.</p>
+    <p>Beendest du die Freigabe, verlieren alle anderen den Zugriff. Verlässt jemand das Team, verliert er den Zugriff ebenso. In beiden Fällen behalten die bisherigen Mitglieder eine Kopie der Daten auf ihren Geräten, die nicht mehr mit dem Team abgeglichen wird. Was andere so gesichert haben, liegt bei ihnen.</p>
+
+    <h2>7. Bearbeitungsverlauf</h2>
+    <p>Damit im Team nachvollziehbar ist, wer was geändert hat, hält Objekt Tracker jede Änderung mit Namen, Gerätetyp (iPhone, iPad oder Mac) und Uhrzeit fest, dazu den alten und den neuen Wert. Den Namen trägst du einmal je Gerät selbst ein; im Team ist er Pflicht, sonst freiwillig. Den Namen deines Geräts liest die App nicht aus.</p>
+    <p>Der Verlauf wird wie alle Daten mit deinen Geräten und dem Team abgeglichen und bleibt erhalten, wenn ein Objekt gelöscht wird. Frühere Einträge behalten den Namen, der damals eingetragen war. Einzelne Einträge lassen sich in der App derzeit nicht löschen.</p>
+
+    <h2>8. Erinnerungen und Mitteilungen</h2>
+    <p>Erinnerungen an Fristen plant Objekt Tracker als lokale Mitteilungen auf deinem Gerät. Sie werden nur nach deiner Zustimmung angezeigt; die Berechtigung kannst du jederzeit in den Systemeinstellungen ändern. Damit Änderungen von deinen anderen Geräten und deinem Team ankommen, nutzt iCloud stille Hintergrundmitteilungen von Apple; sie enthalten keine Inhalte deiner Daten.</p>
+
+    <h2>9. Telefon, E-Mail und Karten</h2>
+    <p>Tippst du auf eine Telefonnummer, eine E-Mail-Adresse oder eine Objektadresse, öffnet Objekt Tracker die passende App deines Geräts – Telefon, Mail oder Apple Karten – und übergibt ihr nur diese Angabe. Für die weitere Verarbeitung gelten die Bedingungen der jeweiligen App, bei Apple Karten die Datenschutzrichtlinie von Apple.</p>
+
+    <h2>10. Sicherung und CSV-Export</h2>
+    <p>Unter Daten &amp; Sicherung kannst du eine vollständige Sicherung und eine Angebotsübersicht als CSV-Datei exportieren. Beide Dateien entstehen nur auf deinem Gerät; wo du sie speicherst oder an wen du sie weitergibst, entscheidest du selbst. Die Sicherung enthält alle Daten samt Kontaktdaten, Unterlagen und Bearbeitungsverlauf unverschlüsselt – im Team auch die Daten der anderen. Geh mit der Datei entsprechend sorgfältig um.</p>
+
+    <h2>11. Analyse, Werbung und Tracking</h2>
+    <p>Objekt Tracker enthält keine Werbung, keine Analyse- oder Absturzdienste von Drittanbietern und verfolgt dich nicht über Apps oder Websites anderer Anbieter hinweg. Falls du in den Systemeinstellungen zugestimmt hast, Analysedaten mit App-Entwicklern zu teilen, stellt Apple Jaradii anonymisierte Absturz- und Nutzungsstatistiken bereit; diese lassen keinen Rückschluss auf deine Person oder deine Daten zu.</p>
+
+    <h2>12. Diese Website</h2>
+    <p>Diese Seite wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc. (USA). Beim Aufruf verarbeitet GitHub technisch notwendige Zugriffsdaten wie deine IP-Adresse, um die Seite auszuliefern und vor Missbrauch zu schützen; dabei können Daten in die USA übertragen werden. Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren Bereitstellung (Art. 6 Abs. 1 lit. f DSGVO). Näheres steht in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>. Die Seite selbst setzt keine Cookies, lädt keine externen Schriften oder Skripte und nutzt keine Analyse-Werkzeuge.</p>
+
+    <h2>13. Speicherdauer und Löschung</h2>
+    <p>Deine Daten bleiben gespeichert, bis du sie löschst. Bevor Objekte, Kunden, Anfragen, Angebote, Unterlagen oder Gesprächsnotizen gelöscht werden, fragt Objekt Tracker nach. Was du im Team löschst, verschwindet bei allen Mitgliedern. Löschst du die App, werden die Daten auf dem Gerät entfernt; Daten in iCloud verwaltest du über die iCloud-Einstellungen deines Geräts. Daten im Team liegen im iCloud-Bereich der Person, die den Link erstellt hat.</p>
+
+    <h2>14. Deine Rechte</h2>
+    <p>Nach der DSGVO hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Da Jaradii keine Daten von dir speichert, verwaltest du deine Daten direkt in Objekt Tracker und über deinen Apple Account. Daten in einem Team verwaltet das Team gemeinsam. Bei Fragen erreichst du uns unter der oben genannten E-Mail-Adresse. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren.</p>
+
+    <h2>15. Änderungen</h2>
+    <p>Wir passen diese Datenschutzerklärung an, wenn sich Funktionen von Objekt Tracker oder rechtliche Anforderungen ändern.</p>
+
+    <p class="muted">Stand: 5. November 2026</p>
+  </section>
+
+  <section id="support">
+    <p class="muted">Objekt Tracker · Support</p>
+    <h1>Wie können wir helfen?</h1>
+    <div class="track"></div>
+
+    <div class="card">
+      <strong>Kontakt</strong><br>
+      E-Mail: <a href="mailto:appfeedback.rented544@passmail.net">appfeedback.rented544@passmail.net</a>
+    </div>
+
+    <h2>Meine Daten erscheinen nicht auf dem anderen Gerät</h2>
+    <p>Beide Geräte müssen mit demselben Apple Account bei iCloud angemeldet sein; einen Link brauchen deine eigenen Geräte nicht. Öffne Daten &amp; Sicherung – auf dem iPhone über „…“ oben rechts, auf iPad und Mac unten in der Seitenleiste. Unter „iCloud“ siehst du, ob abgeglichen wird und wann zuletzt, und ob „Mit deinen Geräten abgleichen“ eingeschaltet ist. Ist dein iCloud-Speicher voll, merkt sich die App die Änderungen und sendet sie, sobald wieder Platz ist.</p>
+
+    <h2>Wie lade ich mein Team ein?</h2>
+    <p>Öffne Daten &amp; Sicherung › Team und tippe auf „Team-Link erstellen“. Ist auf dem Gerät noch kein Name eingetragen, fragt die App zuerst danach. Den Link schickst du über Nachrichten, AirDrop, Mail oder jede andere App. Wer ihn öffnet, bestätigt „Team beitreten?“ mit seinem Namen. Unter „Team“ siehst du, wie viele Personen mitarbeiten. Bedenke: Jeder mit dem Link kann beitreten und alles bearbeiten.</p>
+
+    <h2>Der Team-Link lässt sich nicht öffnen</h2>
+    <p>Wer beitreten will, braucht Objekt Tracker auf iPhone, iPad oder Mac und muss dort bei iCloud angemeldet sein. Ein Apple Account kann nicht gleichzeitig einen eigenen Team-Link teilen und in einem anderen Team sein – beende dann zuerst die eigene Freigabe. Öffnest du deinen eigenen Link auf einem deiner Geräte, sagt dir die App, dass das nicht nötig ist. Der Beitritt gilt für den ganzen Apple Account: Deine anderen Geräte wechseln von selbst ins Team.</p>
+
+    <h2>Ein Objekt nur für mich behalten</h2>
+    <p>Öffne das Objekt, tippe auf „Bearbeiten“ und schalte unter „Team“ „Mit dem Team abgleichen“ aus. Nach einer Rückfrage verschwindet das Objekt samt Anfragen, Angeboten, Unterlagen und Gesprächsnotizen bei allen anderen im Team, bleibt aber auf all deinen Geräten. Du erkennst es am Schloss und am Hinweis „Nicht im Team · nur auf deinen Geräten“. Kunden und ihre Ansprechpartner bleiben immer im Team.</p>
+
+    <h2>Team verlassen oder Freigabe beenden</h2>
+    <p>Hast du den Link erstellt, beendest du mit „Freigabe beenden“ die Zusammenarbeit für alle: Die anderen verlieren den Zugriff und behalten eine Kopie. Bist du einem Team beigetreten, verlässt du es mit „Team verlassen“; das gilt für alle deine Geräte, deine Kopie bleibt. Ist ein Link in falsche Hände geraten, beende die Freigabe und erstelle einen neuen Link.</p>
+
+    <h2>Wer hat was geändert?</h2>
+    <p>Im Menü „…“ bzw. in der Seitenleiste findest du den „Bearbeitungsverlauf“. Er zeigt jede Änderung mit Name, Gerät und Uhrzeit, Feld für Feld mit altem und neuem Wert; du kannst nach Personen filtern und suchen. Die letzten Änderungen stehen auch im Überblick eines Objekts und auf der Kundenseite. Deinen Namen änderst du unter Daten &amp; Sicherung › Bearbeitungsverlauf.</p>
+
+    <h2>Erinnerungen kommen nicht</h2>
+    <p>Schalte unter Daten &amp; Sicherung „An Fristen erinnern“ ein und wähle die Uhrzeit, auf Wunsch auch eine Erinnerung am Vortag. Erlaube Mitteilungen für Objekt Tracker in den Systemeinstellungen unter Mitteilungen; ist das aus, zeigt dir die App einen Hinweis dorthin. Prüfe auch, ob ein Fokus die Mitteilungen gerade stummschaltet. Geplant werden immer die nächsten 60 Erinnerungen.</p>
+
+    <h2>Warum steht eine Frist nicht mehr in der Liste?</h2>
+    <p>Nachfasstermine erscheinen nur für offene, versendete Angebote. Ist ein Objekt beauftragt, abgeschlossen oder nicht beauftragt, entstehen keine Akquisefristen mehr. Eine Kundenabgabe gilt als erledigt, sobald es zur Anfrage ein versendetes, angenommenes oder abgelehntes Angebot gibt; Entwürfe zählen nicht. Stimmen Objekt- und Anfrageabgabe überein, steht die Frist nur einmal da.</p>
+
+    <h2>Mehrere Ansprechpartner je Firma</h2>
+    <p>Im Kundenformular fügst du beliebig viele Ansprechpartner mit Name, Position, E-Mail, Telefon und Mobil hinzu; Name oder Position genügt. In jeder Anfrage hakst du an, wer für dieses Projekt zuständig ist. Fehlt jemand, legst du ihn direkt in der Anfrage an – er landet dann auch beim Kunden.</p>
+
+    <h2>Unterlagen importieren und öffnen</h2>
+    <p>Im Objekt unter „Unterlagen“ tippst du auf „Importieren“ und wählst eine oder mehrere Dateien aus. Ein Tipp öffnet sie in der Vorschau, über „Speichern unter …“ exportierst du sie wieder. Bezeichnung und Dokumenttyp – Leistungsverzeichnis, Plan, Nachtrag oder Sonstiges – kannst du nachträglich ändern.</p>
+
+    <h2>Beträge eingeben</h2>
+    <p>Gib Nettosummen in Euro ein, etwa „12.500,00“ oder „12500.00“. Negative Beträge nimmt die App nicht an, und dieselbe Angebotsnummer gibt es je Anfrage nur einmal. Die Summen auf der Übersicht addieren die einzelnen Angebote – Alternativangebote an mehrere Firmen für dasselbe Objekt zählen also mehrfach.</p>
+
+    <h2>Daten sichern und umziehen</h2>
+    <p>Unter Daten &amp; Sicherung › „Vollständige Sicherung exportieren“ speichert Objekt Tracker alle Daten samt Unterlagen und Bearbeitungsverlauf in einer Datei. Mit „Sicherung wiederherstellen“ liest du sie wieder ein: Die App ergänzt nur, was fehlt, und überschreibt keine vorhandenen Objekte. Die Angebotsübersicht als CSV ist für Excel oder Numbers gedacht und keine vollständige Sicherung.</p>
+
+    <h2>Hell oder dunkel</h2>
+    <p>Du wählst zwischen System, Hell und Dunkel – auf iPad und Mac unten in der Seitenleiste, auf dem iPhone im Menü „…“ oder unter Daten &amp; Sicherung.</p>
+
+    <h2>Feedback oder Fehler melden</h2>
+    <p>Schreib uns bitte die Version von Objekt Tracker, deine iOS-, iPadOS- oder macOS-Version, das Gerätemodell, ob du im Team arbeitest, und kurz, was du getan hast, bevor das Problem auftrat. Schick bitte keine Kundendaten oder Unterlagen mit.</p>
+
+    <p class="muted">Objekt Tracker 1.0 · Stand: 5. November 2026</p>
+  </section>
+</main>
+</body>
+</html>
